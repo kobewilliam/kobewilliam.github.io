@@ -1,12 +1,16 @@
 ## Welcome to SustainKG Guide
 
+This system aims to provide a tool for users to create their own concept map. This document can help you learn about the functions used in the system. The system is based on Apache Server and uses Shibboleth module for protecting the users' login information.
+
 The project urls are below:
 
-https://xxxx.com
+SustainKG Projects: https://xxxx.com
+Apache and Shibboleth Configuration: https://xxx.com
 
-### Markdown
+### Frame
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Front-end: VUE-CLI
+Back-end: Java
 
 ```markdown
 Syntax highlighted code block

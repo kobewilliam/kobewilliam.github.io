@@ -15,10 +15,91 @@ Front-end: VUE-CLI
 Back-end: Java
 
 ```markdown
-renderGraph()
+
+#renderGraph()
+
+"""
 
 Input: Concept Map (json format [nodes:[...], links:[...]]) 
 Usage: This functions read the json format data to show a concept map in the website canvas. 
+       If you would like to learn more about the d3, please check the website of d3-force document.
+"""
+
+
+#doubleClick()
+
+"""
+
+Input: info, node, node_name, snippet
+Usage: Users can double click the blanket part in the website to create a node and select its name.
+       If the name has already existed, the node will not be created. 
+       
+"""
+
+#submitData()
+
+"""
+
+Usage: Submit the data to the database.
+
+"""
+
+#mounted()
+
+"""
+
+Usage: Call the functions when the beginning.
+
+"""
+
+#Search()
+
+"""
+
+Usage: Search the node name from Wikipedia for users to select as the current node name
+
+"""
+
+#handleShow()
+
+"""
+
+Usage: After the user log in the system, it will get the data from the backend and show a concept map to users
+       in the front end. 
+
+"""
+
+#selectClear()
+
+"""
+
+Usage: clear all the input variable value for the element.
+
+"""
+
+#change_node_name()
+
+"""
+
+Usage: Change the node name
+
+"""
+
+#change_link_name()
+
+"""
+
+Usage: Change the link name
+
+"""
+
+#drag_addLinks()
+
+"""
+
+Usage: Users can make a single click to a node and drag a link to another node to create a link. 
+
+"""
 
 # Header 1
 ## Header 2

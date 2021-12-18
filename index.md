@@ -15,7 +15,10 @@ Front-end: VUE-CLI
 Back-end: Java
 
 ```markdown
-Syntax highlighted code block
+renderGraph()
+
+Input: Concept Map (json format [nodes:[...], links:[...]]) 
+Usage: This functions read the json format data to show a concept map in the website canvas. 
 
 # Header 1
 ## Header 2

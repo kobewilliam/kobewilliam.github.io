@@ -15,24 +15,21 @@ Please download Node.js and NPM first, the website is https://nodejs.org/en/
 check the version of Node.js and NPM if download successfully
 
 ```
-"""
 
 node -v
 
 npm -v
 
-"""
+
 ```
 Install VUE-CLI and check its version using the following commands:
 
 ```
-"""
 
 npm install -g @vue/cli
 
 vue --version
 
-"""
 ```
 
 

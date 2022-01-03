@@ -31,6 +31,11 @@ npm install -g @vue/cli
 vue --version
 
 ```
+### Set Up Docker Container
+
+For the SustainKG project, the docker container uses Ubuntu as the platform and Apache as the server. At the same time, it uses Shibboleth module to protect the users' login information. The details are here:
+
+https://github.com/kobewilliam/Ubuntu-shibboleth
 
 
 ### Functions

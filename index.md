@@ -1,6 +1,6 @@
 ## Welcome to SustainKG Guide
 
-This system aims to provide a tool for users to create their own concept map. This document can help you learn about the functions used in the system. The system is based on Apache Server and uses Shibboleth module for protecting the users' login information.
+This system aims to provide a tool for users to create their own concept map. This document can help you learn about the functions used in the system. The system is based on Apache Server and uses Shibboleth module for protecting the users' login information. Please remember to open the UCI VPN to use or develop SustainKG project.
 
 The project urls are below:
 
@@ -8,11 +8,12 @@ SustainKG Projects: https://xxxx.com
 
 Apache and Shibboleth Configuration: https://xxx.com
 
-### Frame
+### Installation
 
-Front-end: VUE-CLI
+Installation of VUE-CLI
 
-Back-end: Java
+
+### Functions
 
 ```markdown
 

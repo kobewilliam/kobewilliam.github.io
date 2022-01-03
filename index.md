@@ -49,6 +49,7 @@ https://github.com/kobewilliam/Ubuntu-shibboleth
 Input: Concept Map (json format [nodes:[...], links:[...]]) 
 Usage: This functions read the json format data to show a concept map in the website canvas. 
        If you would like to learn more about the d3, please check the website of d3-force document.
+       When modifications are made for the concept map, this function will be called to update the concept map.
 """
 
 
@@ -66,7 +67,7 @@ Usage: Users can double click the blanket part in the website to create a node a
 
 """
 
-Usage: Submit the data to the database.
+Usage: Submit the data to the database as the json format.
 
 """
 
@@ -74,7 +75,7 @@ Usage: Submit the data to the database.
 
 """
 
-Usage: Call the functions when the beginning.
+Usage: Call the functions when the front-end server starts. 
 
 
 """
@@ -108,7 +109,7 @@ Usage: clear all the input variable value for the element.
 
 """
 
-Usage: Change the node name
+Usage: Change the node name by right clicking the node
 
 """
 
@@ -116,7 +117,7 @@ Usage: Change the node name
 
 """
 
-Usage: Change the link name
+Usage: Change the link name by right clicking the link
 
 """
 

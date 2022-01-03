@@ -10,7 +10,7 @@ Apache and Shibboleth Configuration: https://xxx.com
 
 ### Installation
 
-Installation of VUE-CLI
+## Installation of VUE-CLI
 
 
 ### Functions

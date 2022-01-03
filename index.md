@@ -4,13 +4,13 @@ This system aims to provide a tool for users to create their own concept map. Th
 
 The project urls are below:
 
-SustainKG Projects: https://xxxx.com
+[SustainKG Projects](https://xxxx.com)
 
-Apache and Shibboleth Configuration: https://xxx.com
+[Apache and Shibboleth Configuration](https://github.com/kobewilliam/Ubuntu-shibboleth)
 
 ### Installation of VUE-CLI
 
-Please download Node.js and NPM first, the website is https://nodejs.org/en/
+Please download Node.js and NPM first, the website is [here](https://nodejs.org/en/)
 
 check the version of Node.js and NPM if download successfully
 
@@ -33,9 +33,7 @@ vue --version
 ```
 ### Set Up Docker Container
 
-For the SustainKG project, the docker container uses Ubuntu as the platform and Apache as the server. At the same time, it uses Shibboleth module to protect the users' login information. The details are here:
-
-https://github.com/kobewilliam/Ubuntu-shibboleth
+For the SustainKG project, the docker container uses Ubuntu as the platform and Apache as the server. At the same time, it uses Shibboleth module to protect the users' login information. The details are [here](https://github.com/kobewilliam/Ubuntu-shibboleth):
 
 
 ### Functions

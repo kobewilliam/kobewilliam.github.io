@@ -85,6 +85,9 @@ sudo git pull
 sudo npm run build
 
 ```
+![git pull](gitpull.png)
+
+![npm build](npmbuild.png)
 
 After the success of building, you will get a folder called /dist, then copy the folder into the docker. 
 
@@ -226,8 +229,6 @@ Usage: Users can make a single click to a node and drag a link to another node t
 
 [Link](url) and ![Image](src)
 ```
-
-![Image](gitpull.png)
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 

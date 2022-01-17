@@ -105,6 +105,9 @@ sudo docker build -t ubuntu-shib .
 
 ```
 
+![docker build](dockerbuild.png)
+
+
 Finally we can start the docker container! 
 
 ```
@@ -113,6 +116,9 @@ sudo docker run -itp 443:443 -e FQDN=graphdb.ics.uci.edu --net sustainKGnetwork 
 
 
 ```
+
+![docker run](dockerrun.png)
+
 
 If you already start a container, please delete it first.
 

@@ -35,6 +35,91 @@ vue --version
 
 For the SustainKG project, the docker container uses Ubuntu as the platform and Apache as the server. At the same time, it uses Shibboleth module to protect the users' login information. The details are [here](https://github.com/kobewilliam/Ubuntu-shibboleth):
 
+### Configuration file
+
+The configuration file is sustainKG/src/assets/config.js. The follow steps will illustarte how to modify the config file as your preference.
+
+The first step is to learn about the config file sample.
+
+```markdown 
+
+let config = {
+
+
+    admin_users : ['hfreedma', 'qingys1', 'wmt'],
+    relationships : ["causes", "inhibits", "produces", "has part", "part of"],
+    concepts : 'Wikipedia',
+    Voting : true,
+    Citations : true,
+    Collaborative : true
+
+};
+
+export { config }
+
+admin_users : The user who has authority to check the dashboard. For example, if your username of UCI account is 'hfreedma' and you wish to check the dashboard, then you should add 'hfreedma' into the 'admin_users' like the above sample.
+
+relationships : The user can change this paramter to modify the label selection of the links. For example, there are two concepts A and B, and A 'causes' B, we can see from the 'relationships', there is a selection called 'causes'. And if A 'is' B, but it doesn't contain 'is', then we can add 'is' to the 'relationships'. The next time you create a link, you can find a selection called 'is'.
+
+'concepts' : The user can select the concept name from the Wikipedia search results. 
+
+'Voting' : 
+
+'Citations': If a citation will be added into the link. If it is true, we can't only select the label of the link but also input a citation of the link. 
+
+'Collaborative' : 
+
+```
+
+After learning about the sample, the next step is to make the modification effective. 
+
+1. Log in the UCI VPN
+2. Log in the Vagrant machine (xenial_2)
+3. Use the following commands:
+
+```
+cd sustainKG
+
+sudo git pull 
+
+sudo npm run build
+
+```
+
+After the success of building, you will get a folder called /dist, then copy the folder into the docker. 
+
+```
+cd ../Ubuntu-shibboleth
+
+sudo cp -r ../sustainKG/dist docker/secure
+
+```
+
+Then, we can build the docker container. (Please pay attention to the period !!!)
+
+```
+sudo docker build -t ubuntu-shib .
+
+```
+
+Finally we can start the docker container! 
+
+```
+
+sudo docker run -itp 443:443 -e FQDN=graphdb.ics.uci.edu --net sustainKGnetwork --name ubuntu-shib ubuntu-shib
+
+
+```
+
+If you already start a container, please delete it first.
+
+```
+
+sudo docker rm -f ubuntu-shib
+
+```
+
+Now, please have fun about your modification!
 
 ### Functions
 

@@ -4,7 +4,7 @@ This system aims to provide a tool for users to create their own concept map. Th
 
 The project urls are below:
 
-[SustainKG Projects](https://xxxx.com)
+[SustainKG Projects](https://github.com/greenguy33/sustainKG)
 
 [Apache and Shibboleth Configuration](https://github.com/kobewilliam/Ubuntu-shibboleth)
 

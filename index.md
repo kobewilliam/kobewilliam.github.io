@@ -227,7 +227,7 @@ Usage: Users can make a single click to a node and drag a link to another node t
 [Link](url) and ![Image](src)
 ```
 
-![Image](https://github.com/kobewilliam/kobewilliam.github.io/blob/main/gitpull.png)
+![Image](gitpull.png)
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 

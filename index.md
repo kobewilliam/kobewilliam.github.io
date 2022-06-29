@@ -51,7 +51,9 @@ let config = {
     concepts : 'Wikipedia',
     Voting : true,
     Citations : true,
-    Collaborative : true
+    Collaborative : true,
+    useShibboleth : true,
+    protocol: 'ws://localhost:8089/connectToWebsocket'
 
 };
 
@@ -67,7 +69,9 @@ relationships : The user can change this paramter to modify the label selection 
 
 'Citations': If a citation will be added into the link. If it is true, we can't only select the label of the link but also input a citation of the link. 
 
-'Collaborative' : 
+'Collaborative' : If it is true, we will use the websockets to help users work in one graph together. 
+
+'protocol' : This means the websocket request to the backend. 
 
 ```
 
@@ -218,6 +222,70 @@ Usage: Change the link name by right clicking the link
 """
 
 Usage: Users can make a single click to a node and drag a link to another node to create a link. 
+
+"""
+
+#addVote()
+
+"""
+
+Usage: Users can vote the link to show if they like or dislike the relationship. And other users can see that. 
+
+"""
+
+#zoomed()
+
+"""
+
+Usage: Users can make the graph to zoom or shirnk by Sliding the mouse wheel. And after they log in again, the graph will be shown in the previous scale they set.
+
+"""
+
+#tick()
+
+"""
+
+Usage: Simulation of the graph which means keep the graph updating with every operations by users. 
+
+"""
+
+#transform1() & transform2()
+
+"""
+
+Usage: Initialize and update the nodes(transform1) and text(transform2) position. It also controls the movements of the nodes and text. 
+
+"""
+
+#getNodesLine()
+
+"""
+
+Usage: Initialize and update the links position, the links' postion are determined by the positions of the nodes. This function will calculate the correct straight line between the two nodes(source and target). 
+
+"""
+
+#getCircleColor()
+
+"""
+
+Usage: If we click a node which is not clicked before, the node will change the color from orange to red and we can add links by dragging. If the node is red and we click it, it will return to the orange and we can drag the node to move instead of creating links.
+
+"""
+
+#drag()
+
+"""
+
+Usage: this function has three stages: First, dragstart() which means the actions we can do before we drag the node, the second one is called drag() which means the actions we do during dragging, and the last one is dragend() which means the actions we do after dragging. Inside this function, a new line will show up during dragging to simulate the process of creating links if we click the node to make it color to be red. Everytime, we move the node, this movement will be saved automatically to the database. 
+
+"""
+
+#Menu()
+
+"""
+
+Usage: Control the menu style (The menu will show up when we right click the nodes or links) and also the vote function. 
 
 """
 

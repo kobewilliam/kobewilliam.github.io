@@ -35,6 +35,18 @@ vue --version
 
 For the SustainKG project, the docker container uses Ubuntu as the platform and Apache as the server. At the same time, it uses Shibboleth module to protect the users' login information. The details are [here](https://github.com/kobewilliam/Ubuntu-shibboleth):
 
+### Update the certifications for the front End
+
+Please go to the UCI server and do the following commands, then you will find the certifications used by the front end. You can update them.
+
+```
+
+cd Ubuntu-shibboleth
+
+cd docker/ssl
+
+```
+
 ### Configuration file
 
 The configuration file is sustainKG/src/assets/config.js. The follow steps will illustarte how to modify the config file as your preference.
